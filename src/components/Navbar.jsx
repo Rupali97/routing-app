@@ -24,11 +24,11 @@ function Navbar(props) {
     <div>
       <AppBar position="fixed" style={{backgroundColor: '#034f84'}}>
         <Toolbar>
-            <Link className={classes.linkText} onClick={() => props.change("jobs")}><Typography variant="h6">Jobs</Typography></Link>
-            <Link className={classes.linkText} onClick={() => props.change("inbox")}><Typography variant="h6">Inbox</Typography></Link>
-            <Link className={classes.linkText} onClick={() => props.change("calendar")}><Typography variant="h6">Calendar</Typography></Link>
-            <Link className={classes.linkText} onClick={() => props.change("career")}><Typography variant="h6">Career Page</Typography></Link>
-            <Link className={classes.linkText} onClick={() => props.change("report")}><Typography variant="h6">Report</Typography></Link>
+            <Link className={classes.linkText} to="/jobs"><Typography variant="h6">Jobs</Typography></Link>
+            <Link className={classes.linkText} to="/inbox"><Typography variant="h6">Inbox</Typography></Link>
+            <Link className={classes.linkText} to="/calendar"><Typography variant="h6">Calendar</Typography></Link>
+            <Link className={classes.linkText} to="/career"><Typography variant="h6">Career Page</Typography></Link>
+            <Link className={classes.linkText} to="/report"><Typography variant="h6">Report</Typography></Link>
         </Toolbar>
       </AppBar>
       {props.children}

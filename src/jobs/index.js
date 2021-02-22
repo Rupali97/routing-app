@@ -5,14 +5,13 @@ import Divider from '@material-ui/core/Divider';
 
 
 function Index(props) {
-
+  
   const [jobField, setJobField] = React.useState('');
 
   const getJobField = (filed) => {
     setJobField(filed)
   }
 
-   console.log("jobField", jobField)
   return (
     <div className="paddingTop">
       <SelectionBar getJobField={getJobField} />

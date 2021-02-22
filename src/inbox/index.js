@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Index() {
+function Index(props) {
   return (
     <div className="paddingTop">
-      <h1>Inbox</h1>
+     <h1>Inbox</h1>
     </div>
   )
 }
