@@ -9,11 +9,9 @@ const useStyles = makeStyles((theme) => ({
     padding: 20,
     height: 400,
   },
-
 }))
 
 function InfoSection(props) {
-
   const classes = useStyles();
 
   if(props.jobField === "") return <div />

@@ -32,8 +32,6 @@ function SelectionBar(props) {
     props.getJobField(jobField)
   }, [jobField])
 
-  // console.log("jobField", jobField)
-
   return (
     <div className={classes.container}>
       <div style={{display: 'flex'}}>
@@ -57,7 +55,6 @@ function SelectionBar(props) {
           </FormControl>
         </div>
       </div>
-     
     </div>
   )
 }
